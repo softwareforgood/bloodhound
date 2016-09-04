@@ -1,5 +1,10 @@
 # Changes to Bloodhound
 
+## v0.2.1
+
+* Updated package dependencies (spcifically poison) to proper version
+  to better work with eilixir 1.3. 
+
 ## v0.1.1
 
 * #3: Don't add data from Ecto.Association.NotLoaded

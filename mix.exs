@@ -6,7 +6,7 @@ defmodule Bloodhound.Mixfile do
       files: ["lib", "mix.exs", "README.md", "LICENSE"],
       maintainers: ["Ian Walter"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/ianwalter/bloodhound"}
+      links: %{"GitHub" => "https://github.com/AdocA/bloodhound"}
     ]
   end
 
@@ -19,8 +19,8 @@ defmodule Bloodhound.Mixfile do
   def project do
     [
       app: :bloodhound,
-      version: "0.1.1",
-      elixir: "~> 1.0",
+      version: "0.2.1",
+      elixir: "~> 1.3",
       elixirc_paths: elixirc_paths(Mix.env),
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
@@ -52,11 +52,11 @@ defmodule Bloodhound.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:httpoison, "~> 0.8.0"},
-      {:poison, "~> 1.5"},
-      {:earmark, "~> 0.1", only: :dev},
-      {:ex_doc, "~> 0.10", only: :dev},
-      {:ecto, "~> 1.0", only: :test}
+      {:httpoison, "~> 0.9.1"},
+      {:poison, "~> 2.2"},
+      {:earmark, "~> 1.0.1", only: :dev},
+      {:ex_doc, "~> 0.13", only: :dev},
+      {:ecto, "~> 2.0.4", only: :test}
     ]
   end
 end
